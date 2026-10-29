@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<h1>Click The Btn And Try Our Mini Calculator</h1>
+<button onclick="run()">Try Calculator</button>
+
+<script>
+    function run(){
+
+        var num1 = Number(prompt("Enter Your First Number"))
+        var num2 = Number(prompt("Enter Your Second Number"))
+        var operation = prompt("Enter Your Operator: + , - , *, /")
+        var result;
+
+        if(operation=="+"){
+            result = num1 + num2
+        }
+
+        else if(operation=="-"){
+            result=num1-num2
+        }
+
+        else if(operation=="*"){
+            result=num1*num2
+        }
+        else if(operation=="/"){
+            result=num1/num2
+        }
+       else{
+        alert("invalid operator")
+       }
+
+       alert(result + " Result")
+
+    
+
+
+
+
+    }
+</script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
